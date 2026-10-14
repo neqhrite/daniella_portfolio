@@ -19,7 +19,6 @@
     --page-width: 1120px;
 }
 
-/* Dark mode remains soft and legible rather than using harsh neon colors. */
 [data-theme="dark"] {
     color-scheme: dark;
     --page: #201a20;
@@ -35,7 +34,6 @@
     --shadow: 0 22px 70px rgba(0, 0, 0, .22);
 }
 
-/* 2. Reset, defaults, and subtle ambient background. */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 100px; }
 body { margin: 0; min-width: 320px; background: var(--page); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.75; transition: background-color .25s ease, color .25s ease; overflow-x: hidden; }
@@ -48,7 +46,6 @@ button { font: inherit; }
 .page-glow--bottom { top: 980px; left: -300px; background: radial-gradient(circle, var(--surface-soft), transparent 70%); opacity: .8; }
 .section-wrap { width: min(var(--page-width), calc(100% - 64px)); margin-inline: auto; }
 
-/* 3. Header and navigation. */
 .site-header { position: sticky; top: 0; z-index: 20; padding: 15px 0; background: color-mix(in srgb, var(--page) 88%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--line) 68%, transparent); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
 .nav-shell { width: min(var(--page-width), calc(100% - 64px)); min-height: 48px; margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 26px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
@@ -70,7 +67,6 @@ button { font: inherit; }
 .menu-toggle.is-open span:nth-child(2) { opacity: 0; }
 .menu-toggle.is-open span:last-child { transform: translateY(-5.5px) rotate(-45deg); }
 
-/* 4. Hero section: clear hierarchy, portrait frame, and subtle decorative shapes. */
 .hero { position: relative; min-height: 650px; padding-top: 95px; padding-bottom: 105px; display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: clamp(48px, 8vw, 100px); }
 .hero-copy { position: relative; z-index: 1; max-width: 570px; }
 .eyebrow, .section-kicker, .portrait-topline, .caption-name, .project-topline, .project-count, .preview-label, .contact-side-label { font-size: 10px; font-weight: 700; letter-spacing: .16em; }
@@ -114,7 +110,6 @@ h1, h2, h3, p { margin-top: 0; }
 .scroll-cue span::after { position: absolute; top: 0; left: 0; width: 1px; height: 10px; content: ''; background: var(--accent); animation: scroll-line 1.7s ease-in-out infinite; }
 @keyframes scroll-line { 0% { transform: translateY(-12px); } 100% { transform: translateY(32px); } }
 
-/* 5. About section uses an editorial two-column layout. */
 .about-section { padding-top: 77px; padding-bottom: 105px; border-top: 1px solid var(--line); }
 .section-kicker { display: flex; align-items: center; gap: 13px; margin-bottom: 33px; color: var(--muted); font-size: 9px; }
 .section-kicker > span:first-child { color: var(--accent); }
@@ -127,7 +122,6 @@ h1, h2, h3, p { margin-top: 0; }
 .skill-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
 .skill-list span, .project-tags span { padding: 6px 10px; border: 1px solid var(--line); border-radius: 2px; color: var(--accent-deep); font-size: 10px; font-weight: 600; }
 
-/* 6. Projects: locally rendered preview illustrations avoid unreliable placeholder images. */
 .projects-section { padding-top: 75px; padding-bottom: 100px; border-top: 1px solid var(--line); }
 .projects-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 36px; }
 .projects-heading .section-title { margin-bottom: 8px; }
@@ -149,53 +143,6 @@ h1, h2, h3, p { margin-top: 0; }
 .project-tags span { padding: 4px 7px; font-size: 8px; }
 .project-footnote { display: flex; align-items: center; gap: 9px; margin: 24px 0 0; color: var(--muted); font-size: 10px; }
 .project-footnote span { color: var(--accent); font-size: 16px; }
-
-/* LIVORA mini preview. */
-.preview-livora { background: #f5e9d9; }
-.mini-browser { height: 28px; display: flex; align-items: center; gap: 4px; padding: 0 10px; background: #fffaf2; border-bottom: 1px solid rgba(115,79,59,.15); }
-.mini-browser > span { width: 5px; height: 5px; border-radius: 50%; background: #d7a5a4; }
-.mini-browser > span:nth-child(2) { background: #e8c18c; }
-.mini-browser > span:nth-child(3) { background: #a6b79a; }
-.mini-browser small { margin-left: 8px; color: #94796b; font: 8px var(--sans); }
-.livora-preview-content { position: relative; z-index: 1; padding: 17px 0 25px 20px; }
-.mini-brand { display: block; margin-bottom: 17px; color: #79563c; font: 700 15px var(--serif); letter-spacing: .1em; }
-.mini-brand span { margin-left: 4px; color: #b48b4d; font-size: 10px; }
-.mini-overline { display: block; margin-bottom: 7px; color: #96745b; font-size: 6px; font-weight: 700; letter-spacing: .15em; }
-.livora-preview-content strong { display: block; color: #4a3429; font: 600 28px/1.04 var(--serif); letter-spacing: -.05em; }
-.livora-preview-content strong em { color: #a66c4f; }
-.mini-cta { display: inline-block; margin-top: 14px; padding-bottom: 3px; border-bottom: 1px solid #b48b4d; color: #76553d; font-size: 7px; font-weight: 700; letter-spacing: .08em; }
-.book-stack { position: absolute; right: 13px; bottom: 29px; width: 100px; height: 112px; transform: rotate(-6deg); }
-.book-stack i { position: absolute; right: 0; bottom: 0; width: 70px; height: 95px; border: 1px solid rgba(73,46,34,.18); border-radius: 2px 4px 4px 2px; background: linear-gradient(90deg,#7e493e 0 9%,#d9a87b 10% 13%,#f5d8b0 14% 100%); box-shadow: 2px 4px 5px rgba(72,45,31,.16); transform: rotate(10deg); }
-.book-stack i:nth-child(2) { right: 24px; bottom: -4px; height: 84px; background: linear-gradient(90deg,#596b55 0 9%,#e7d5b4 10% 13%,#fff0d3 14% 100%); transform: rotate(-12deg); }
-.book-stack i:nth-child(3) { right: 8px; bottom: -8px; height: 70px; background: linear-gradient(90deg,#b48b4d 0 10%,#e8c88e 11% 14%,#fff0d3 15% 100%); transform: rotate(2deg); }
-.book-stack i:nth-child(4) { right: 34px; bottom: -12px; width: 65px; height: 56px; background: linear-gradient(180deg,#c28e72,#a66c4f); transform: rotate(5deg); }
-
-/* Student planner mini preview. */
-.preview-planner { display: grid; place-items: center; background: #f1e9f0; }
-.planner-window { width: 88%; min-height: 174px; display: grid; grid-template-columns: 76px 1fr; background: #fffdfd; border: 1px solid #e5d6e0; box-shadow: 0 10px 24px rgba(90,57,78,.1); transform: rotate(-2deg); }
-.planner-sidebar { display: flex; flex-direction: column; gap: 12px; padding: 15px 8px; background: #faf3f7; color: #9c8a97; font-size: 6px; }
-.planner-sidebar b { margin-bottom: 9px; color: #8c5575; font: 700 11px var(--serif); }
-.planner-sidebar .side-active { padding: 5px; border-radius: 3px; background: #f0dbe8; color: #875575; }
-.planner-main { padding: 17px 12px 10px; }
-.planner-date { color: #a27e9b; font-size: 6px; font-weight: 700; letter-spacing: .1em; }
-.planner-main > strong { display: block; margin: 5px 0 12px; color: #443542; font: 600 18px/1.05 var(--serif); }
-.task-row { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; padding: 5px; border: 1px solid #f0e7ee; color: #766773; font-size: 6px; }
-.task-row i { width: 7px; height: 7px; border: 1px solid #bf8eab; border-radius: 2px; }
-.task-row b { margin-left: auto; color: #b17e9e; font-size: 5px; }
-.task-row--short { width: 85%; }
-
-/* Weather dashboard mini preview. */
-.preview-weather { padding: 19px 20px 25px; background: linear-gradient(145deg,#f8e5e8,#e9ddec); }
-.weather-top { display: flex; justify-content: space-between; color: #927984; font-size: 6px; font-weight: 700; letter-spacing: .1em; }
-.weather-place { margin-top: 22px; color: #584652; font: 600 18px var(--serif); }
-.weather-current { display: flex; align-items: center; justify-content: space-between; padding: 9px 0 12px; }
-.weather-current div > span, .weather-current small { display: block; color: #967e8b; font-size: 7px; }
-.weather-current div > strong { display: block; color: #6c5269; font: 500 46px/.95 var(--serif); }
-.sun-illustration { padding-right: 13px; color: #c89478; font-size: 66px; line-height: 1; }
-.weather-forecast { display: grid; grid-template-columns: repeat(4, 1fr); padding: 9px 0; border-top: 1px solid rgba(132,98,124,.2); }
-.weather-forecast div { display: grid; justify-items: center; gap: 3px; color: #8d7487; font-size: 7px; }
-.weather-forecast b { color: #b58c9f; font-size: 14px; }
-.weather-forecast small { color: #5f4c5d; font-size: 8px; }
 
 /* 7. Contact panel and footer. */
 .contact-section { padding-top: 25px; padding-bottom: 85px; }
