@@ -1,8 +1,4 @@
-/**
- * Daniella Jade Baldo — portfolio interactions.
- * Features: accessible mobile navigation, light/dark theme toggle,
- * active section navigation, and automatic footer year.
- */
+
 const menuToggle = document.getElementById('menuToggle');
 const navMenu = document.getElementById('navMenu');
 const navLinks = document.querySelectorAll('.nav-link');
