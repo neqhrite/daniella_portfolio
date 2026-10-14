@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff8fa">
+    <meta name="description" content="The personal portfolio of Daniella Jade S. Baldo, a BSIT student interested in web development and thoughtful digital design.">
+    <title>Daniella Jade Baldo — Personal Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="page-glow page-glow--top" aria-hidden="true"></div>
+    <div class="page-glow page-glow--bottom" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="nav-shell">
+            <a class="brand" href="#home" aria-label="Daniella Jade Baldo, home">
+                <span class="brand-mark" aria-hidden="true">d.</span>
+                <span class="brand-name">Daniella <span>B</span></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+                <a class="nav-link is-active" href="#home">Home</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+                    <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.2A8.4 8.4 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"/></svg>
+                </button>
+
+                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE INTRODUCTION ⟡</p>
+                <h1 id="hero-title">One dream<br> <em>at a time.</em></h1>
+                <p class="hero-lede">Hello, I'm <strong>Daniella Jade S. Baldo</strong> — a third-year BSIT student exploring the sweet spot between thoughtful design and useful technology.</p>
+                <p class="hero-description">An eager student exploring the art of web development and thoughtful design. I love turning ideas into beautiful, user-friendly digital experiences — one detail at a time.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="#contact">Let's connect <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="hero-note"><span class="status-dot" aria-hidden="true"></span> Open to learning, collaboration, and new ideas</div>
+            </div>
+
+            <div class="hero-visual" aria-label="Profile portrait">
+                <div class="portrait-frame">
+                    <div class="portrait-topline"><span>MY PORTFOLIO</span><span aria-hidden="true">✦</span></div>
+                    <img class="profile-photo" src="images/daniella.jpg" alt="Portrait of Daniella Jade S. Baldo">
+                    <div class="portrait-caption"><span class="caption-script">Nice to meet you!</span></div>
+                </div>
+                <div class="orbit orbit--one" aria-hidden="true"></div>
+                <div class="orbit orbit--two" aria-hidden="true"></div>
+                <div class="floating-stamp" aria-hidden="true"><span>𖦹</span><small>SEE MY<br>WORKS</small></div>
+                <span class="visual-sparkle sparkle--one" aria-hidden="true">✦</span>
+                <span class="visual-sparkle sparkle--two" aria-hidden="true">✧</span>
+            </div>
+            <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+        </section>
+
+        <!-- A concise personal profile helps make the page content feel intentional. -->
+        <section class="about-section section-wrap" id="about" aria-labelledby="about-title">
+            <div class="section-kicker"><span class="kicker-rule"></span><span>GET TO KNOW JADE</span></div>
+            <div class="about-grid">
+                <div>
+                    <h2 class="section-title" id="about-title">A little about <em>me.</em></h2>
+                    <p class="about-lede">Isaiah 60:22 — "At the right time, I, the LORD, will make it happen"</p>
+                </div>
+                <div class="about-detail">
+                    <p>Hello there! I am Daniella Jade S. Baldo, a student with a growing passion for web development and creative design, from BSIT 3H-G1. I enjoy bringing ideas to life through thoughtful layouts, harmonious colors, and meaningful digital experiences.</p>
+                    <p>My goal is to create work that balances visual personality with clarity, accessibility, and purpose.</p>
+                    <div class="skill-list" aria-label="Areas I am exploring">
+                        <span>Creative Thinking</span><span>Purposeful Design</span><span>Lifelong Learning</span><span>Faith & Growth</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS: three portfolio cards with locally built visual previews. -->
+        <section class="projects-section section-wrap" id="projects" aria-labelledby="projects-title">
+            <div class="section-kicker"><span class="kicker-rule"></span><span>SELECTED WORKS · 2026</span></div>
+            <div class="projects-heading">
+                <div>
+                    <h2 class="section-title" id="projects-title">My <em>projects.</em></h2>
+                    <p class="section-intro">A collection of ideas, crafted with purpose and curiosity.</p>
+                </div>
+                <span class="project-count">A SMALL COLLECTION <span>⟡</span></span>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <a class="project-preview project-preview--image" href="#contact" aria-label="Ask me about the Student Records System project">
+                        <img src="images/student-records.png" alt="Student Records System dashboard showing class average, average grade, and student statistics" loading="lazy">
+                    </a>
+                    <div class="project-info">
+                        <div class="project-topline"><span>01 / STUDENT MANAGEMENT</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+                        <h3>Student Records System</h3>
+                        <p>A student management dashboard that organizes academic records, calculates class averages, and simplifies grade monitoring.</p>
+                        <div class="project-tags"><span>Grade Calculations</span><span>Dashboard UI</span></div>
+                    </div>
+                </article>
+                <article class="project-card project-card--featured">
+                    <a class="project-preview project-preview--image" href="#contact" aria-label="Ask me about the LIVORA online bookstore project">
+                        <img src="images/livora-homepage.png" alt="LIVORA online bookstore homepage with book categories and bestsellers" loading="lazy">
+                    </a>
+                    <div class="project-info">
+                        <div class="project-topline"><span>02 / E-COMMERCE</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+                        <h3>LIVORA — Online Bookstore</h3>
+                        <p>An e-commerce bookstore interface featuring curated book collections, genre-based browsing, and a user-friendly shopping experience.</p>
+                        <div class="project-tags"><span>UI/UX Design</span><span>E-commerce</span><span>Figma Prototype</span></div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <a class="project-preview project-preview--image" href="#contact" aria-label="Ask me about the CoOpinion Survey Management System project">
+                        <img src="images/coopinion-login.jpg" alt="CoOpinion Survey Management System login interface with a blue welcome panel" loading="lazy">
+                    </a>
+                    <div class="project-info">
+                        <div class="project-topline"><span>03 / SURVEY MANAGEMENT</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+                        <h3>CoOpinion — Survey System</h3>
+                        <p>A web-based survey management platform focused on structured survey workflows, response organization, and efficient data handling.</p>
+                        <div class="project-tags"><span>Web Application</span><span>Login UI</span><span>Interface Design</span></div>
+                    </div>
+                </article>
+            </div>
+            <p class="project-footnote"><span aria-hidden="true">✳</span> Project previews represent work and interfaces developed during my learning journey.</p>
+        </section>
+
+        <!-- CONTACT / FOOTER: direct ways to get in touch. -->
+        <section class="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
+            <div class="contact-card">
+                <div class="contact-decoration" aria-hidden="true">✿</div>
+                <div class="section-kicker"><span>03</span><span class="kicker-rule"></span><span>YOUR TURN</span></div>
+                <div class="contact-content"><p class="eyebrow">HAVE A PROJECT OR AN IDEA?</p><h2 class="section-title" id="contact-title">Let's make something<br><em>meaningful.</em></h2><p>I'd love to connect, learn from others, and hear about creative opportunities.</p><a class="button button-primary" href="mailto:YOUR-EMAIL@example.com">Say hello <span aria-hidden="true">↗</span></a><p class="contact-note">Before submitting, replace the sample email and GitHub profile link with your own details.</p></div>
+                <div class="contact-side"><span class="contact-side-label">FIND ME AROUND THE WEB</span><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="mailto:YOUR-EMAIL@example.com">Email <span aria-hidden="true">↗</span></a><span class="contact-flower" aria-hidden="true">✳</span></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer closes the single-page portfolio. -->
+    <footer class="site-footer"><a class="footer-brand" href="#home">d.</a><p>Designed with curiosity and a little bit of blush. </p><span>© <span id="currentYear">2026</span> Daniella Jade S. Baldo</span></footer>
+</body>
+</html>
